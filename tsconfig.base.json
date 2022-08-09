@@ -14,7 +14,21 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@ng-conduit/conduit/home/feature": [
+        "libs/conduit/home/feature/src/index.ts"
+      ],
+      "@ng-conduit/conduit/layout/feature": [
+        "libs/conduit/layout/feature/src/index.ts"
+      ],
+      "@ng-conduit/conduit/login/feature": [
+        "libs/conduit/login/feature/src/index.ts"
+      ],
+      "@ng-conduit/conduit/register/feature": [
+        "libs/conduit/register/feature/src/index.ts"
+      ],
+      "@ng-conduit/layout/feature": ["libs/layout/feature/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

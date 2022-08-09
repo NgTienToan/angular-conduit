@@ -1,0 +1,33 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/conduit/login/feature/src",
+  "prefix": "ng-conduit",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:ng-packagr-lite",
+      "outputs": ["dist/libs/conduit/login/feature"],
+      "options": {
+        "project": "libs/conduit/login/feature/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/conduit/login/feature/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/conduit/login/feature/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/conduit/login/feature/**/*.ts",
+          "libs/conduit/login/feature/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
